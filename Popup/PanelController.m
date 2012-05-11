@@ -36,6 +36,7 @@
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:NSControlTextDidChangeNotification object:self.searchField];
+    [super dealloc];
 }
 
 #pragma mark -

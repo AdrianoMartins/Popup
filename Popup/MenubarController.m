@@ -25,6 +25,8 @@
 - (void)dealloc
 {
     [[NSStatusBar systemStatusBar] removeStatusItem:self.statusItem];
+    [_statusItemView release];
+    [super dealloc];
 }
 
 #pragma mark -
