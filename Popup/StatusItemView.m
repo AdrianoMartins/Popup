@@ -18,7 +18,8 @@
     NSRect itemRect = NSMakeRect(0.0, 0.0, itemWidth, itemHeight);
     self = [super initWithFrame:itemRect];
     
-    if (self != nil) {
+    if (self != nil)
+    {
         _statusItem = statusItem;
         _statusItem.view = self;
     }
